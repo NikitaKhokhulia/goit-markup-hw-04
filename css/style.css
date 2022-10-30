@@ -172,14 +172,20 @@ body {
 
 /* Section solutions */
 .solutions {
-  display: flex;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: #2f303a;
   text-align: center;
 }
+
+.page-solutions {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/solutions.jpg), #C4C4C4;
+  background-repeat: no-repeat;
+  border: 1px solid #000000;
+  background-position: center;
+}
+
 .solutions .container {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -212,6 +218,7 @@ body {
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-filter {
@@ -253,7 +260,18 @@ body {
 .features.list .item:first-child {
   margin-right: 0px;
 }
-*/ .features .title {
+
+.features.list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  border: 1px solid tomato;
+  background-image: ;
+
+}
+
+
+ .features .title {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
