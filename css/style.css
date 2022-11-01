@@ -100,6 +100,13 @@ body {
   padding: 0px;
 }
 
+/* Header */
+.page-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
 /* logo */
 
 .logo {
@@ -141,7 +148,6 @@ body {
 
 .site-nav .link {
   padding: 32px 0px;
-
   color: var(--title-text-color);
   font-size: 14px;
   font-weight: 500;
@@ -155,9 +161,7 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
+  justify-content: center;
 }
 
 /* Auth-nav */
@@ -165,6 +169,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
+  justify-content: center;
 }
 
 .auth-nav .item {
@@ -176,6 +181,9 @@ body {
 }
 
 .auth-nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 32px 0px;
 
   color: var(--primary-text-color);
@@ -186,14 +194,15 @@ body {
   text-decoration: none;
 }
 
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.icon-contacts {
-  margin-right: 10px;
 }
 
 /* Section solutions */
@@ -248,6 +257,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.button:hover,
+.button:focus {
+  cursor: pointer;
+}
+
 .button-filter {
   display: block;
   padding: 6px 22px;
@@ -265,6 +279,7 @@ body {
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 .button-filter.current {
